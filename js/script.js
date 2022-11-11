@@ -32,9 +32,9 @@ console.log(car.driver);
 
 //  3) Метод для перевірки імені водія
 function checkDriver (x) {
-    if ('driver' in x) {
-        return x.driver;
-    }
+    if (x.driver) {
+        return `Iм'я водія ${x.driver}`;
+    } else return `ім'я водія відсутнє`;
 };
 console.log(checkDriver(car));
 
